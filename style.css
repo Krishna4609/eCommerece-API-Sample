@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    position: 2px;
+    height: 10vh;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px rgba(0, 0,0, 0.6);
+    border-radius: 0px 0px 5px 5px;
+    z-index: 2;
+}
+
+nav .search{
+    position: absolute;
+    right:10px;
+}
+
+.search img{
+    position: relative;
+    top: 6px;
+    width: 20px;
+}
+
+.searchbar{
+    outline: 0;
+    padding: 3px;
+    border: 0;
+    border-radius: 7px;
+}
+
+.heading{
+    position: relative;
+    left: 6px;
+    display: flex;
+}
+.heading h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+
+.heading img{
+    margin-right: 10px;
+    width: 30px;
+}
+
+.user-login{
+    position: absolute;
+    right: 210px;
+    display: flex;
+}
+
+.user-login button{
+    margin: 5px;
+    border: 0;
+    background-color: grey;
+    font-weight: bold; 
+}
+
+.user-login button img{
+    width: 20px;
+}
+.product-container{
+    position: relative;
+    top: 10vh;
+    left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    margin: 1rem;
+    overflow: hidden;
+    width: 300px;
+    height: 190px;
+    box-shadow: 1px 3px 10px black;
+    border-radius: 20px;
+    transition: box-shadow 0.5s ease-in;
+}
+.prod-title{
+    display: block;
+    font-weight: bolder;
+}
+
+.product-card img{
+    height: 190px;
+    width: 100%;
+}
+
+.prod-desc{
+    height:8rem;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    border-radius: 6px 6px 0px 0px;
+    background-color: white;
+    transform: translatey(0%);
+    transition: transform 0.6s ease-in;
+}
+ .prod-price{
+    display: block;
+    font-weight: bold;
+    position: relative;
+    left:60%;
+ }
+
+.product-card:hover{
+    box-shadow: 2px 5px 5px black;
+}
+.product-card:hover .prod-desc{
+    transform: translateY(-101%);
+}
+
+.searchbar:focus{
+    box-shadow: 0px 2px 5px black
+}
+.heading:hover{
+    cursor: pointer;
+}
+
+.user-login button:hover{
+    cursor: pointer;
+    position: relative;
+    bottom: 3px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    margin-right: 10px;
+    height: 100%;
+    width: 150px;
+    background-color: grey;
+    display: flex;
+}
+
+.sidebar label{
+    font-weight: bold;
+}
+
+.select-category{
+    outline: 0;
+    border: none;
+}
